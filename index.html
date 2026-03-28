@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First AI Tool</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:sans-serif;">
+  <h1>🚀 我的第一个AI工具</h1>
+  <input id="input" placeholder="输入一句话" style="padding:10px; width:200px;" />
+  <br><br>
+  <button onclick="generate()">生成</button>
+  <p id="output"></p>
 
+  <script>
+    function generate() {
+      const input = document.getElementById("input").value;
+      document.getElementById("output").innerText = "AI生成内容：" + input;
+    }
+  </script>
+</body>
+</html>
